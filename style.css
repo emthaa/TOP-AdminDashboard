@@ -16,41 +16,235 @@ width:25px;
   
 .container{
     display: grid;
-    grid-template-areas: 1fr 6fr/ 1fr 10fr;
+    grid-template-columns: minmax(175px,200px) minmax(1050px,6fr);
+    grid-template-rows: minmax(150px,1fr) 6fr;
     height: 100vh;
-    width: 100vw;
+    width:100vw;
 }
   
 .sidebar{
-    grid-row: 1/span 5;
+    grid-row: 1/span 10;
     grid-column: 1/span 10;
-    width: 1250px;
-    
-    background-color: rgb(102, 105, 50);
+
+    background-color: rgb(9, 147, 221);
+    display: flex;
+    flex-direction: column;
+    padding-left: .5%;
 }
 
 .topbar{
     grid-row: 1;
     grid-column: 2/span 10;
-    background-color: rgb(137, 147, 76);
+    background-color: rgb(255, 255, 255);
 }
 
 .content{
-    grid-row: 2/span 4;
+    grid-row: 2/span 9;
     grid-column: 2/span 10;
-    background-color: rgb(41, 45, 18);
+    background-color: rgb(187, 187, 187);
 }
 
 
-.sidebar{
-   display: flex;
-   flex-direction: column;
-    padding-left: 1%;
-   
-}
 
 .sidecontent,.sideheader{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+.sidebar > a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#dashboard{
+    background-image: url("view-dashboard.svg");
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+
+}
+
+#home{
+    background-image: url("home.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+}
+.sideitem{
+    font-size: 20px;
+    padding-left: 2%;
+    padding-top: 1%;
+    color:white;
+}
+
+.divsplit{
+    padding-top: 40px;
+}
+
+#profile{
+    background-image: url("badge-account-horizontal.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+}
+
+#messages{
+    background-image: url("message-reply.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+}
+
+#history{
+    background-image: url("clock-time-seven.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+}
+
+#tasks{
+    background-image: url("text-box-multiple.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+
+}
+
+#communities{
+    background-image: url("account-group.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+}
+
+#settings{
+    background-image: url("cog.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position:0px 90%;
+    padding-left: 25px;
+}
+
+#support{
+    background-image: url("help-box.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+}
+
+#privacy{
+    background-image: url("shield-check.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0px 90%;
+    padding-left: 25px;
+}
+
+#srch{
+    width: 20px;
+    height: 20px;
+    padding-left: 25px;
+    padding-right: 10px;
+    padding-left: 25px;
+}
+
+.searchbar{
+    width: 750px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(152, 152, 152);
+    border: none;
+}
+
+
+#noti{
+    width: 25px;
+    height: 25px;
+    padding-left: 45%;
+    padding-right: 15px;
+}
+
+#pfp{
+    width: 35px;
+    height: 35px;
+    border-radius: 150px;
+    
+}
+
+.topbartop{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    height: 40%;
+}
+
+.topbartop > div{
+
+    color: black;
+    font-weight: bolder;
+}
+
+#username{
+    padding-left:10px; ;
+}
+
+#pfp2{
+    height: 55px;
+    width: 55px;
+    border-radius: 150px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.topbarbottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.sideitem:hover{
+    color: rgb(198, 198, 198);
+}
+
+#intro{
+    font-weight: bold;
+    font-size: 20px;
+}
+#atuser{
+    font-weight: bolder;
+    font-size: 25px;
+    padding-right: 500px;
+}
+
+.buttons > button{
+    background-color: rgb(9, 147, 221);
+    height: 35px;
+    width: 75px;
+    border: none;
+    border-radius: 150px;
+    color: #FFFFFF;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    
+    gap:16px;
+    padding-right: 15px;
+}
+
+#topbarbottomleft{
+    display: flex;
 }
